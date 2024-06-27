@@ -22,6 +22,7 @@ python app.py
 2. Faça uma requisição de saque:
 curl -X POST -H "Content-Type: application/json" -d '{"valor": 380}' http://localhost:5000/api/saque
 
+
 ## Testes
 Para rodar os testes:
 python -m unittest tests.py
