@@ -21,6 +21,24 @@ python app.py
 
 2. Faça uma requisição de saque:
 curl -X POST -H "Content-Type: application/json" -d '{"valor": 380}' http://localhost:5000/api/saque
+Usando Postman:
+
+Abra o Postman.
+Crie uma nova requisição.
+Defina o método como POST.
+Coloque a URL como http://localhost:5000/api/saque.
+Vá até a aba "Body" e selecione "raw".
+Escolha o tipo "JSON" e insira {"valor": 380}.
+Envie a requisição e veja a resposta.
+Usando Insomnia:
+
+Abra o Insomnia.
+Crie uma nova requisição.
+Defina o método como POST.
+Coloque a URL como http://localhost:5000/api/saque.
+Vá até a aba "Body" e selecione "JSON".
+Insira {"valor": 380}.
+Envie a requisição e veja a resposta.
 
 
 ## Testes
@@ -30,6 +48,14 @@ python -m unittest tests.py
 ## Desafios
 - Garantir que a lógica de cálculo de cédulas seja eficiente e retorne a menor quantidade possível.
 - Tratar entradas inválidas e garantir que a API responda adequadamente a esses casos.
+
+
+## Explicações Adicionais:
+
+- **Ambiente Virtual**: Recomenda-se criar um ambiente virtual para isolar as dependências do projeto.
+- **Ativação do Ambiente Virtual**: As instruções de ativação do ambiente virtual variam dependendo do sistema operacional.
+- **Execução da Aplicação**: As instruções são as mesmas para todos os sistemas operacionais, mas é sempre bom reforçar.
+- **Ferramentas de Teste (Postman, Insomnia)**: Instruções detalhadas para usar essas ferramentas para fazer requisições à API.
 
 ## Considerações Finais
 Este projeto foi desenvolvido para simular um caixa eletrônico simples, com a lógica otimizada para garantir a menor quantidade de cédulas possíveis para qualquer valor de saque permitido.
